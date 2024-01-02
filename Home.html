@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;1,400&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: url(images/rainyy.jpg);
+        background-size: cover;
+        background-position: center;
+        color: #fff;
+    }
+
+    .container {
+        position: relative;
+        width: 400px;
+        height: 500px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 2px solid;
+        backdrop-filter: blur(30px);
+        color: #fff;
+        border-radius: 16px;
+        padding: 20px;
+        margin-top: 2000px;
+        margin-bottom: 40px;
+    }
+
+    .welcome {
+        justify-content: center;
+        color: black;
+        align-content: center;
+        backdrop-filter: blur(10px);
+        transition: background-color 0.3s ease;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+    .welcome:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+</style>
+<!-- sisir de  la ville -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">YourWeather</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                    <a class="nav-link" href="weather.html">Weather</a>
+                    <a class="nav-link" href="map.html">Map</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="welcome" href="weather.html">
+        <h3>Welcome to <span>YourWeather</span> </h3>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
